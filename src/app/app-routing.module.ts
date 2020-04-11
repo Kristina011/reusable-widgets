@@ -21,6 +21,11 @@ const routes: Routes = [
       import('./views/views.module').then(m => m.ViewsModule)
   },
   {
+    path:
+      'mods', loadChildren: () =>
+      import('./mods/mods.module').then(m => m.ModsModule)
+  },
+  {
     path: '', component: HomeComponent
   //  empty '' refers to a main page local host
   },
