@@ -15,11 +15,11 @@ const routes: Routes = [
       'collections', loadChildren: () =>
       import('./collections/collections.module').then(m => m.CollectionsModule)
   },
-  // {
-  //   path:
-  //     'mods', loadChildren: () =>
-  //     import('./mods/mods.module').then(m => m.ModsModule)
-  // },
+  {
+    path:
+      'views', loadChildren: () =>
+      import('./views/views.module').then(m => m.ViewsModule)
+  },
   {
     path: '', component: HomeComponent
   //  empty '' refers to a main page local host
