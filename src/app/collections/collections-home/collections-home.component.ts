@@ -1,4 +1,4 @@
-import {Component, OnInit, Output} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-collections-home',
@@ -6,12 +6,12 @@ import {Component, OnInit, Output} from '@angular/core';
   styleUrls: ['./collections-home.component.css']
 })
 export class CollectionsHomeComponent implements OnInit {
-  @Output() data = [
+  data = [
     { name: 'James', age: 24, job: 'Designer' },
     { name: 'Jill', age: 26, job: 'Engineer' },
     { name: 'Elyse', age: 25, job: 'Designer' }
   ];
-  @Output() headers = [
+  headers = [
     { key: 'name', label: 'Name' },
     { key: 'age', label: 'Age' },
     { key: 'job', label: 'Job' }
